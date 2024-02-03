@@ -18,6 +18,7 @@ export default function TicketsList() {
           <th>Description</th>
           <th>Emergency?</th>
           <th>Date Completed</th>
+          <th>Details</th>
           <th></th>
         </tr>
       </thead>

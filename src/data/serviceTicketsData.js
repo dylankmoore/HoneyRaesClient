@@ -5,3 +5,7 @@ export const getServiceTickets = () => {
 };
 
 //export a function here that gets a ticket by id
+export const getServiceTicketById = (ticketId) => {
+  const url = `${_apiUrl}/${ticketId}`;
+  return fetch(url).then((r) => r.json());
+};
