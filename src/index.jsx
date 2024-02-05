@@ -7,13 +7,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ServiceTickets from "./components/tickets/ServiceTickets";
 import TicketsList from "./components/tickets/TicketsList";
 import TicketDetails from "./components/tickets/TicketDetails";
-import CreateTicket from "./components/tickets/CreateTicket";
 import CustomersList from "./components/customers/CustomersList";
 import CustomerDetails from "./components/customers/CustomerDetails";
 import Customers from "./components/customers/Customers";
 import Employees from "./components/employees/Employees";
 import EmployeesList from "./components/employees/EmployeesList";
 import EmployeeDetails from "./components/employees/EmployeeDetails";
+import CreateTicketForm from "./components/tickets/create";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,8 +23,8 @@ root.render(
         {/* tickets */}
         <Route path="tickets" element={<ServiceTickets />}>
           <Route index element={<TicketsList />} />
+          <Route path="create" element={<CreateTicketForm />} />
           <Route path=":id" element={<TicketDetails />} />
-          <Route path="create" element={<CreateTicket />} />
         </Route>
 
           {/* customers */}
@@ -38,9 +38,7 @@ root.render(
           <Route index element={<EmployeesList />} />
           <Route path=":id" element={<EmployeeDetails />} />
         </Route>
-
-        
-        </Route>
+      </Route>
     </Routes>
   </BrowserRouter>,
 );

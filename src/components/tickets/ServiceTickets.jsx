@@ -1,12 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
-import { Button } from "reactstrap";
 
 export default function ServiceTickets() {
+
   return (
-    <>
+    <div id="main">
+      <br />
       <h2>Service Tickets</h2><br />
-      <Link to="/tickets/create">Add</Link><br /><br />
+      <Link id="add" to="/tickets/create">Add A Ticket</Link><br /><br />
       <Outlet />
-    </>
+    </div>
   );
 }

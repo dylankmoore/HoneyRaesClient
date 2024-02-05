@@ -8,8 +8,6 @@ export default function EmployeeDetails() {
   const [employee, setEmployee] = useState(null);
 
   useEffect(() => {
-    console.log("EmployeeDetails rendered");
-    console.log("Employee ID:", id);
     const fetchEmployeeDetails = async () => {
       try {
         const employeeData = await getEmployeeById(id);
