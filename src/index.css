@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#form {
+  max-width: 65%;
+  margin: 0 auto;
+
+}
+
+#main {
+  max-width: 55%;
+  margin: 0 auto;
+  align-self: center;
+}
+
+#customers {
+  max-width: 55%;
+  margin: 0 auto;
+  align-self: center;
+}
+
+#employees {
+  max-width: 55%;
+  margin: 0 auto;
+  align-self: center;
+}
+
+#add {
+  color: lightcoral;
+}
+
+#details {
+  color: plum;
+}
+
+#delete {
+  background-color: indianred;
+  border-color: indianred;
+}
+
+#submit {
+  background-color: plum;
+  border-color: plum;
+}

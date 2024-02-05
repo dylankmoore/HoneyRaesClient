@@ -8,8 +8,6 @@ export default function CustomerDetails() {
   const [customer, setCustomer] = useState(null);
 
   useEffect(() => {
-    console.log("CustomerDetails rendered");
-    console.log("Customer ID:", id);
     const fetchCustomerDetails = async () => {
       try {
         const customerData = await getCustomerById(id);

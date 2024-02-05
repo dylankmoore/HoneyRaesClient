@@ -7,7 +7,6 @@ export default function CustomersList() {
   const [customers, setCustomers] = useState([]);
 
   useEffect(() => {
-    console.log("CustomersList rendered");
     const fetchCustomers = async () => {
       try {
         const customersData = await getCustomers();
@@ -36,7 +35,7 @@ export default function CustomersList() {
             <th scope="row">{customer.id}</th>
             <td>{customer.name}</td>
             <td>{customer.address}</td>
-            <td><Link to={`/customers/${customer.id}`}>Details</Link></td>
+            <td><Link id ="details" to={`/customers/${customer.id}`}>Details</Link></td>
           </tr>
         ))}
       </tbody>

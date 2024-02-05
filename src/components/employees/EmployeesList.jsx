@@ -7,7 +7,6 @@ export default function EmployeesList() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    console.log("EmployeesList rendered");
     const fetchEmployees = async () => {
       try {
         const employeeData = await getEmployees();
@@ -36,7 +35,7 @@ export default function EmployeesList() {
             <th scope="row">{employee.id}</th>
             <td>{employee.name}</td>
             <td>{employee.specialty}</td>
-            <td><Link to={`/employees/${employee.id}`}>Details</Link></td>
+            <td><Link id="details" to={`/employees/${employee.id}`}>Details</Link></td>
           </tr>
         ))}
       </tbody>
