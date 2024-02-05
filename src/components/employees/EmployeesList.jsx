@@ -32,7 +32,7 @@ export default function EmployeesList() {
       <tbody>
         {employees.map((employee) => (
           <tr key={`customer-${employee.id}`}>
-            <th scope="row">{employee.id}</th>
+            <th scope="row">{employee.id}.</th>
             <td>{employee.name}</td>
             <td>{employee.specialty}</td>
             <td><Link id="details" to={`/employees/${employee.id}`}>Details</Link></td>
