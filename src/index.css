@@ -53,3 +53,9 @@ code {
   background-color: plum;
   border-color: plum;
 }
+
+#complete {
+  background-color: mistyrose;
+  border-color: mistyrose;
+  color: black;
+}

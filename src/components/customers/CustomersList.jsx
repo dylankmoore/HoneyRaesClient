@@ -32,7 +32,7 @@ export default function CustomersList() {
       <tbody>
         {customers.map((customer) => (
           <tr key={`customer-${customer.id}`}>
-            <th scope="row">{customer.id}</th>
+            <th scope="row">{customer.id}.</th>
             <td>{customer.name}</td>
             <td>{customer.address}</td>
             <td><Link id ="details" to={`/customers/${customer.id}`}>Details</Link></td>

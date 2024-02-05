@@ -29,3 +29,11 @@ export const deleteServiceTicket = async (id) => {
     throw new Error(`Error deleting service ticket with ID ${id}`);
   }
 };
+
+export const completeServiceTicket = (id) => 
+  fetch(`${_apiUrl}/${id}/complete`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
